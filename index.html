@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+	<title>Instagram Photo Feed with Bootstrap</title>
+</head>
+
+
+
+<body>
+	<div class="container ">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+			<div class="container">
+				<div class="d-grid gap-3 d-md-flex ">
+					<img  src="instagram icon.png" width="30" height="30" >
+					<h5><strong>Instagram</strong></h5>
+				</div>
+				<form class="d-flex" role="search">
+					<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+						<button type="button" class="btn btn-success" data-bs-toggle="modal"
+							data-bs-target="#exampleModal">
+							Create a new post
+						</button>
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<h6>Caption:</h6>
+										<textarea rows="2" cols="50"
+											placeholder="Add the caption of your post here"></textarea><br>
+										<button type="button" class="btn btn-light">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+												fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+												<path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path>
+												<path
+													d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z">
+												</path>
+											</svg>
+										</button>
+										<button type="button" class="btn btn-light">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+												fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+												<path
+													d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z">
+												</path>
+											</svg>
+										</button>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-success">Publish</button>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+							integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+							crossorigin="anonymous"></script>
+				</form>
+
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+						data-bs-toggle="dropdown" aria-expanded="false">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+							class="bi bi-gear-fill" viewBox="0 0 16 16">
+							<path
+								d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+						</svg>
+					</button>
+					<div class="dropdown-menu">
+						<a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a>
+						<a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Accesibility</a>
+						<a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Privacy and Data</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item">Logout</a>
+					</div>
+				</div>
+
+			</div>
+	</div>
+	</nav>
+	<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+		<li class="nav-item" role="presentation">
+			<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3" viewBox="0 0 16 16">
+				<path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z"/>
+			  </svg></button>
+		</li>
+		<li class="nav-item" role="presentation">
+			<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+				<path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+			  </svg></button>
+		</li>
+	</ul>
+	<div class="tab-content" id="myTabContent">
+		<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+			<div id="square"  class="album py-5 bg-light">
+				<div class="container-fluid">
+					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+						<div class="col">
+							<div class="card shadow-sm">
+								<img src="erik-mclean-8SeJUmfahu0-unsplash.jpg" width="100%" height="355">
+																
+							</img>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<img src="pexels-francesco-ungaro-1671324.jpg" width="100%" height="355">
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<img src="pexels-jacob-colvin-1757363.jpg" width="100%" height="355">
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<img src="stephen-momot-UivGzIDhVyw-unsplash.jpg" width="100%" height="355">
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<img src="totte-annerbrink-AYh0edy-4nc-unsplash.jpg" width="100%" height="355">
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<img src="pexels-roberto-nickson-2775196.jpg" width="100%" height="355">
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<img src="yohan-cho-dHOH6saXfCQ-unsplash.jpg" width="100%" height="355">
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<img src="ben-neale-zpxKdH_xNSI-unsplash.jpg" width="100%" height="355">
+							</div>
+						</div>
+						<div class="col">
+							<div class="card shadow-sm">
+								<img src="seyed-sina-fazeli-XP9JF6jyRGc-unsplash.jpg" width="100%" height="355">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+			<div id="square"  class="album py-5 bg-light" >
+				<div class="d-flex justify-content-center" >
+					<span class="border">
+						<div class="post">
+					
+					<p class="alignleft">"With great responsibility..."</p><p class="alignright">3/16</p>
+						<center><img src="erik-mclean-8SeJUmfahu0-unsplash.jpg" width="875px" height="600px"></center>
+					<strong>750 Likes</strong>
+					<p>No matter how old I get I will always be a kid at heart.
+					</p>
+				
+			</div>
+			</span>
+				</div> 
+				<br>
+				<div class="d-flex justify-content-center" >
+					<span class="border">
+						<div class="post">
+							<p class="alignleft">NOPE!</p><p class="alignright">9/19</p>
+						<center><img src="pexels-francesco-ungaro-1671324.jpg" width="875px" height="600px"></center>
+					<strong>666 Likes</strong>
+					<p>Why did I agree to this? I could have stay my happy ass at home. 
+					</p>
+				
+			</div>
+			</span>
+				</div> 
+				<br>
+				<div class="d-flex justify-content-center" >
+					<span class="border">
+						<div class="post">
+							<p class="alignleft">Last day</p><p class="alignright">12/35</p>
+						<center><img src="pexels-jacob-colvin-1757363.jpg" width="875px" height="600px"></center>
+					<strong>2450 Likes</strong>
+					<p>The last few nights have been great but I'm starting to miss my bed. My back can't take this anymore.
+					</p>
+				
+			</div>
+			</span>
+				</div>
+				<br> 
+				<div class="d-flex justify-content-center" >
+					<span class="border">
+						<div class="post">
+							<p class="alignleft">WE OUT!!!</p><p class="alignright">7/16</p>
+						<center><img src="stephen-momot-UivGzIDhVyw-unsplash.jpg" width="875px" height="600px"></center>
+					<strong>3750 Likes</strong>
+					<p>There's only one reason I would be awake this damn early!
+					</p>
+				
+			</div>
+			</span>
+				</div>
+				<br> 
+				<div class="d-flex justify-content-center" >
+					<span class="border">
+						<div class="post">
+							<p class="alignleft">Even on vacation</p><p class="alignright">22/58</p>
+						<center><img src="totte-annerbrink-AYh0edy-4nc-unsplash.jpg" width="875px" height="600px"></center>
+					<strong>8675 Likes</strong>
+					<p>The hunt doesn't stop just because you're on vacation. Always on the look out for a "Holy Grail" 
+					</p>
+				
+			</div>
+			</span>
+				</div>
+				<br> 
+				<div class="d-flex justify-content-center" >
+					<span class="border">
+						<div class="post">
+							<p class="alignleft">Another day on the water</p><p class="alignright">77/79</p>
+						<center><img src="pexels-roberto-nickson-2775196.jpg" width="875px" height="600px"></center>
+					<strong>358 Likes</strong>
+					<p>One thing my Pops would always say was "It can't rain all the time". Another was "Any day on the water is a good day". 
+					</p>
+				
+			</div>
+			</span>
+				</div>
+				<br> 
+				<div class="d-flex justify-content-center" >
+					<span class="border">
+						<div class="post">
+							<p class="alignleft">Time to relax</p><p class="alignright">7/61</p>
+						<center><img src="yohan-cho-dHOH6saXfCQ-unsplash.jpg" width="875px" height="600px"></center>
+					<strong>2020 Likes</strong>
+					<p>After another frustrating day it is finally time to relax and reflect on the day.
+					</p>
+				
+			</div>
+			</span>
+				</div>
+				<br> 
+				<div class="d-flex justify-content-center" >
+					<span class="border">
+						<div class="post">
+							<p class="alignleft">Take me back</p><p class="alignright">19/85</p>
+						<center><img src="ben-neale-zpxKdH_xNSI-unsplash.jpg" width="875px" height="600px"></center>
+					<strong>499 Likes</strong>
+					<p>I just want to go back to when this was my Saturday nights. No responsibilities just fun!
+					</p>
+				
+			</div>
+			</span>
+				</div>
+				<br> 
+				<div class="d-flex justify-content-center" >
+					<span class="border">
+						<div class="post">
+							<p class="alignleft">One Day</p><p class="alignright">9/87</p>>
+						<center><img src="seyed-sina-fazeli-XP9JF6jyRGc-unsplash.jpg" width="875px" height="600px"></center>
+					<strong>1542 Likes</strong>
+					<p>If only my current setup was this clean. Soon!!! 
+					</p>
+				
+			</div>
+			</span>
+				</div> 
+			</div>
+
+	</div>
+	
+	
+</body>
+
+</html>
